@@ -7,8 +7,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      flash[:notice] = "Thank you for signing up!"
       session[:user_id] = @user.id
-      redirect_to root_url, notice: "Thank you for signing up!"
+      redirect_to root_url
     else
       render "new"
     end
