@@ -4,8 +4,13 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
-  resources :users, :photos, :sessions
+  resources :users do
+    resources :photos
+  end
+
+  resources :sessions
 
   root :to => 'application#index'
 
 end
+
