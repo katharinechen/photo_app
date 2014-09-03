@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'photos/new'
 
-  resources :users
+  resources :users, :photos
+
+  root :to => 'application#index'
 
 end
