@@ -7,7 +7,6 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'capybara'
 gem 'launchy'
 gem "paperclip", "~> 4.2"
 gem 'bcrypt-ruby', '3.1.2'
@@ -20,6 +19,7 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'capybara'
 end
 
 group :test do
