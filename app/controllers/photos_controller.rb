@@ -22,5 +22,4 @@ private
     params.require(:photo).permit(:avatar, :user_id)
   end
 
-
 end
