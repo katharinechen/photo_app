@@ -4,7 +4,7 @@
 This project was completed by Katharine Chen and Lee Kebler for Epicodus (Conventional Rails).
 
 == Functionality
-* Only users can upload photos
+* Only users can upload photos@user
 
 == Installation
 Clone the repository:
